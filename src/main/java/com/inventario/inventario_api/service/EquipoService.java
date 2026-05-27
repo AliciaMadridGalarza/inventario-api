@@ -12,6 +12,10 @@ import java.util.List;
 public class EquipoService {
     private EquipoRepository repository;
 
+    public EquipoService(EquipoRepository repository) {
+        this.repository = repository;
+    }
+
     public List<Equipo> obtenerTodos() {
         return repository.findAll();
     }

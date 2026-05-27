@@ -12,6 +12,10 @@ import java.util.List;
 public class SoftwareService {
     private SoftwareRepository repository;
 
+    public SoftwareService(SoftwareRepository repository) {
+        this.repository = repository;
+    }
+
     public List<Software> obtenerTodos(){
         return repository.findAll();
     }

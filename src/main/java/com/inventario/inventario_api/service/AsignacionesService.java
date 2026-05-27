@@ -10,6 +10,10 @@ public class AsignacionesService {
 
     private AsignacionesRepository repository;
 
+    public AsignacionesService(AsignacionesRepository repository) {
+        this.repository = repository;
+    }
+
     public List<Asignaciones> obtenerTodas() {
         return repository.findAll();
     }

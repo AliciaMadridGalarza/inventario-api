@@ -14,6 +14,10 @@ public class UsuarioService {
 
     private UsuarioRepository repository;
 
+    public UsuarioService(UsuarioRepository repository) {
+        this.repository = repository;
+    }
+
     public List<Usuario> obtenerTodos(){
         return repository.findAll();
     }
