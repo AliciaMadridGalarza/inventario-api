@@ -12,6 +12,6 @@ import java.util.List;
 @Repository
 public interface EquipoRepository extends JpaRepository<Equipo, Integer> {
     List<Equipo> findByEstado(Estado estado);
-    List<Equipo> findByTipo(TipoEquipo tipo);
+    List<Equipo> findByTipoEquipo(TipoEquipo tipoEquipo);
     List<Equipo> findByUbicacion(Ubicacion ubicacion);
 }

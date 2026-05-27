@@ -50,8 +50,8 @@ public class EquipoService {
         return repository.findByEstado(estado);
     }
 
-    public List<Equipo> obtenerPorTipo(TipoEquipo tipo) {
-        return repository.findByTipo(tipo);
+    public List<Equipo> obtenerPorTipo(TipoEquipo tipoEquipo) {
+        return repository.findByTipoEquipo(tipoEquipo);
     }
 
     public List<Equipo> obtenerPorUbicacion(Ubicacion ubicacion) {

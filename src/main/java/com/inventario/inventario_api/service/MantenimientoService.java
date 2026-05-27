@@ -46,7 +46,7 @@ public class MantenimientoService {
         return repository.findByEquipoId(id_equipo);
     }
 
-    public List<Mantenimiento> obtenerPorTipo(TipoMantenimiento tipo) {
-        return repository.findByTipo(tipo);
+    public List<Mantenimiento> obtenerPorTipoMantenimiento(TipoMantenimiento tipoMantenimiento) {
+        return repository.findByTipoMantenimiento(tipoMantenimiento);
     }
 }

@@ -10,5 +10,5 @@ import java.util.List;
 @Repository
 public interface MantenimientoRepository extends JpaRepository<Mantenimiento, Integer> {
     List<Mantenimiento> findByEquipoId(Integer idEquipo);
-    List<Mantenimiento> findByTipo(TipoMantenimiento tipo);
+    List<Mantenimiento> findByTipoMantenimiento(TipoMantenimiento tipoMantenimiento);
 }
