@@ -1,6 +1,7 @@
 package com.inventario.inventario_api.controller;
 
 import com.inventario.inventario_api.model.Equipo;
+import com.inventario.inventario_api.model.enums.Estado;
 import com.inventario.inventario_api.service.EquipoService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -24,6 +25,12 @@ public class EquipoController {
     public Equipo obtenerPorId(@PathVariable Integer id) {
         return service.obtenerPorId(id);
     }
+
+    @GetMapping("/disponibles")
+    public List<Equipo> obtenerDisponibles() {
+        return service.obtenerPorEstado(Estado.DISPONIBLE);
+    }
+
 
     @PostMapping
     public Equipo crearEquipo(@RequestBody Equipo equipo) {
