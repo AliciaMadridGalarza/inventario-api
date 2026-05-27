@@ -26,8 +26,8 @@ public class EquipoController {
         return service.obtenerPorId(id);
     }
 
-    @GetMapping("/disponibles")
-    public List<Equipo> obtenerDisponibles() {
+    @GetMapping("/disponible")
+    public List<Equipo> obtenerDisponible() {
         return service.obtenerPorEstado(Estado.DISPONIBLE);
     }
 

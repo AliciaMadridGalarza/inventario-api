@@ -40,7 +40,7 @@ public class EquipoService {
         equipoNuevo.setEstado(equipo.getEstado());
         equipoNuevo.setUbicacion(equipo.getUbicacion());
         equipoNuevo.setSoftware(equipo.getSoftware());
-        return repository.save(equipo);
+        return repository.save(equipoNuevo);
     }
 
     public void eliminar(int id) {
