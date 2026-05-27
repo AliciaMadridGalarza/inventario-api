@@ -13,10 +13,14 @@ public class Software {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(nullable = false, length = 100)
     private String nombre;
+
+    @Column(length = 30)
     private String version;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Licencia licencia;
 
     @Column(name = "fecha_expiracion")
