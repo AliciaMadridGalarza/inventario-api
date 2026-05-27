@@ -3,9 +3,11 @@ package com.inventario.inventario_api.service;
 import com.inventario.inventario_api.exception.ResourceNotFoundException;
 import com.inventario.inventario_api.model.Asignaciones;
 import com.inventario.inventario_api.repository.AsignacionesRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class AsignacionesService {
 
     private AsignacionesRepository repository;

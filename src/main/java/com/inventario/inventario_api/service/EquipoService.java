@@ -6,9 +6,11 @@ import com.inventario.inventario_api.model.enums.Estado;
 import com.inventario.inventario_api.model.enums.TipoEquipo;
 import com.inventario.inventario_api.model.enums.Ubicacion;
 import com.inventario.inventario_api.repository.EquipoRepository;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
-
+@Service
 public class EquipoService {
     private EquipoRepository repository;
 

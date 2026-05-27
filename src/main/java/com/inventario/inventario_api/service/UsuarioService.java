@@ -6,10 +6,11 @@ import com.inventario.inventario_api.repository.UsuarioRepository;
 
 import com.inventario.inventario_api.model.enums.Cargo;
 import com.inventario.inventario_api.model.enums.Departamento;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
+@Service
 public class UsuarioService {
 
     private UsuarioRepository repository;

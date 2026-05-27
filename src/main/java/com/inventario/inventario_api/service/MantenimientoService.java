@@ -4,9 +4,10 @@ import com.inventario.inventario_api.exception.ResourceNotFoundException;
 import com.inventario.inventario_api.model.Mantenimiento;
 import com.inventario.inventario_api.model.enums.TipoMantenimiento;
 import com.inventario.inventario_api.repository.MantenimientoRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class MantenimientoService {
 
     private MantenimientoRepository repository;

@@ -5,10 +5,11 @@ import com.inventario.inventario_api.exception.ResourceNotFoundException;
 import com.inventario.inventario_api.model.Software;
 import com.inventario.inventario_api.model.enums.Licencia;
 import com.inventario.inventario_api.repository.SoftwareRepository;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
-
+@Service
 public class SoftwareService {
     private SoftwareRepository repository;
 
