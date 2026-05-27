@@ -11,6 +11,10 @@ public class MantenimientoService {
 
     private MantenimientoRepository repository;
 
+    public MantenimientoService(MantenimientoRepository repository) {
+        this.repository = repository;
+    }
+
     public List<Mantenimiento> obtenerTodos() {
         return repository.findAll();
     }
